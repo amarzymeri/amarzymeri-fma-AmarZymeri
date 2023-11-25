@@ -1,0 +1,24 @@
+body {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+
+p {
+    color: white;
+    background: #000;
+    width: 50%;
+    padding: 20%;
+    margin: 40px 30px 20px 10px;
+}
+
+h1::before {
+    content: "-";
+    color: firebrick;
+}
+
+h1::after {
+    content: "-";
+    color: firebrick;
+}
