@@ -1,0 +1,22 @@
+h1::after {
+    content: "-";
+    color: darkgoldenrod;
+}
+
+h1::before {
+    content: "-";
+    color: darkgoldenrod;
+}
+
+.b1:hover {
+    background-color: rgb(139, 74, 0);
+    color: blue;
+}
+
+p:first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: blueviolet;
+}
