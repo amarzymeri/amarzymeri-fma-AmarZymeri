@@ -1,0 +1,39 @@
+h1::before {
+    content: "--";
+    color: aqua;
+}
+
+h1::after {
+    content: "--";
+    color: black;
+}
+
+button:hover {
+    background-color: rgb(0, 136, 255);
+    color: rgb(255, 166, 0);
+}
+
+a:visited {
+    color: darkgreen;
+    background-color: purple;
+}
+
+li:nth-child(2n) {
+    color: blue;
+}
+
+.a1 {
+    color: brown;
+}
+
+.a2 {
+    background-color: green;
+}
+
+.a3 {
+    background-color: lightgreen;
+}
+
+.a4 {
+    background-color: darkgreen;
+}
