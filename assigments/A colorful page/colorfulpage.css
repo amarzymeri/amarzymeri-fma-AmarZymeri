@@ -1,13 +1,14 @@
 p {
-    background-color: black;
-    color: white;
-    background-image: url(https://muftimenk.com/wp-content/uploads/mufti-menk.jpg);
+    background-color: white;
+    color: black;
+    background-image: url(https://i.dawn.com/primary/2017/10/59f84d8ed46fc.jpg);
     font-family: 'Dancing Script', cursive;
     background-size: cover;
-    background-size: 100px;
+    background-size: 900px;
     background-repeat: no-repeat;
+    font-size: xx-large;
 }
 
 p {
-    width: 500px;
+    width: 1200px;
 }
