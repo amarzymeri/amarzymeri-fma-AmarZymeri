@@ -1,4 +1,45 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+
+
+h1::before {
+    content: "-";
+    color: darkviolet;
+}
+
+h1::after {
+    content: "-";
+    color: darkviolet;
+}
+
+
+p {
+    float: left;
+    background-repeat: no-repeat;
+    font-size: 14px;
+}
+
 img {
     float: left;
-    font-size: 25%;
+}
+
+.h6:hover {
+    border: 10px solid black;
+    border-color: blueviolet;
+    border-width: 4px;
+    border-style: dashed;
+    border-radius: 40px;
+}
+
+
+div {
+    width: 500px;
+    height: 620px;
+    border-color: rgb(70, 162, 209);
+    border-width: 100;
+    border: 20px solid red;
+    border-width: 1000;
 }
