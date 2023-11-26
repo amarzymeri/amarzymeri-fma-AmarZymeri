@@ -1,0 +1,17 @@
+h1::before {
+    content: "-";
+    color: darkslateblue;
+}
+
+h1::after {
+    content: "-";
+    color: darkslateblue;
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: blue;
+}
