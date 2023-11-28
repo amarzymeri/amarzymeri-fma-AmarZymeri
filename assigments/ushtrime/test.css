@@ -12,3 +12,12 @@ h1 {
     color: blueviolet;
     background-color: brown;
 }
+
+.tb {
+    background-color: grey;
+}
+
+.td {
+    border-top-color: red;
+    border-top-width: 30%;
+}
