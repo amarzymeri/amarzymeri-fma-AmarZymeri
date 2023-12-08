@@ -1,0 +1,89 @@
+body {
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/03/High-Res-5-Free-Brick-Tiles-Textures.jpg);
+    width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    cursor: url(./images/3915740_arrow_direction_maps_navigation_pointer_icon.png) 2 2, pointer;
+}
+
+header {
+    width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.a1 {
+    text-align: center;
+}
+
+.a2 {
+    border: 10px solid black;
+    border-radius: 30px;
+    background-color: lightblue;
+}
+
+.a2:hover {
+    background-color: blue;
+}
+
+.a3 {
+    border: 10px solid black;
+    border-color: red;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+
+.a4 {
+    border: 10px solid black;
+    border-color: red;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+
+.a5 {
+    border: 10px solid black;
+    border-color: red;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+
+.a6 {
+    border: 10px solid black;
+    border-radius: 30px;
+    background-color: red;
+}
+
+.a6:hover {
+    background-color: darkred;
+}
+
+.b1 {
+    border: 10px solid black;
+    border-radius: 30px;
+    background-color: green;
+}
+
+.b1:hover {
+    background-color: darkgreen;
+}
+
+.b2 {
+    border: 10px solid black;
+    border-radius: 30px;
+    background-color: pink;
+}
+
+.b2:hover {
+    background-color: darkmagenta;
+}
+
+.b3 {
+    border: 20px solid black;
+    background-color: black;
+    color: white;
+}
+
+hr {
+    height: 3px;
+    background: black;
+}
