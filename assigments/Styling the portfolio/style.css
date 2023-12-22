@@ -1,89 +1,135 @@
 body {
     background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/03/High-Res-5-Free-Brick-Tiles-Textures.jpg);
-    width: 900px;
-    margin: 20px auto;
-    text-align: center;
     cursor: url(./images/3915740_arrow_direction_maps_navigation_pointer_icon.png) 2 2, pointer;
-}
-
-header {
     width: 900px;
-    margin: 20px auto;
+    margin: 0 200px;
+}
+
+.arrow {
+    width: 25px;
+    height: 25px;
+}
+
+hr {
+    height: 5px;
+    background-color: black;
+}
+
+.hr {
+    display: inline;
+}
+
+.inline {
+    display: inline;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.TextAlignCenter {
     text-align: center;
 }
 
-.a1 {
-    text-align: center;
+.TextAlignLeft {
+    margin: 15px;
+    text-align: left;
 }
 
-.a2 {
-    border: 10px solid black;
+.TextAlignimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BorderColor {
+    border: 3px solid transparent;
+    background-color: lightblue;
     border-radius: 30px;
+}
+
+.BorderColor:hover {
+    background-color: blue;
+    border: 3px solid black;
+}
+
+.Education {
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.Education1 {
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Education2 {
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.Border {
+    border: 3px solid transparent;
     background-color: lightblue;
 }
 
-.a2:hover {
-    background-color: blue;
+.Border:hover {
+    border: 3px solid black;
 }
 
-.a3 {
-    border: 10px solid black;
-    border-color: red;
-    border-radius: 30px;
-    background-color: whitesmoke;
+.margin {
+    margin: 15px;
+    background-color: green;
+    color: white;
 }
 
-.a4 {
-    border: 10px solid black;
-    border-color: red;
-    border-radius: 30px;
-    background-color: whitesmoke;
-}
-
-.a5 {
-    border: 10px solid black;
-    border-color: red;
-    border-radius: 30px;
-    background-color: whitesmoke;
-}
-
-.a6 {
-    border: 10px solid black;
-    border-radius: 30px;
+.BorderColorRed {
     background-color: red;
 }
 
-.a6:hover {
+.BorderColorRed:hover {
     background-color: darkred;
 }
 
-.b1 {
-    border: 10px solid black;
-    border-radius: 30px;
+.BorderColorYellow {
+    background-color: yellow;
+}
+
+.BorderColorYellow:hover {
+    background-color: yellowgreen;
+}
+
+.BorderColorGreen {
     background-color: green;
 }
 
-.b1:hover {
+.BorderColorGreen:hover {
     background-color: darkgreen;
 }
 
-.b2 {
-    border: 10px solid black;
-    border-radius: 30px;
-    background-color: pink;
-}
-
-.b2:hover {
-    background-color: darkmagenta;
-}
-
-.b3 {
-    border: 20px solid black;
+.BorderColorBlack {
     background-color: black;
     color: white;
 }
 
-hr {
-    height: 3px;
-    background: black;
+.bgBlue {
+    background-color: blue;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
 }
