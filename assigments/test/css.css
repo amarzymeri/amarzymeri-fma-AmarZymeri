@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.div {
+    background-color: aqua;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Fend {
+    display: flex;
+    justify-content: center;
+}
+
+li,
+a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
