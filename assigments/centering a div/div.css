@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.Centered {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 500px;
+}
