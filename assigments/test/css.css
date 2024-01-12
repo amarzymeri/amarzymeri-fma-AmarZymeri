@@ -1,25 +1,48 @@
-body {
+* {
     padding: 0;
     margin: 0;
 }
 
 .div {
     background-color: aqua;
-    padding: 30px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 
 }
 
-.Fend {
+.dFlex {
     display: flex;
+}
+
+.Fend {
     justify-content: center;
 }
 
 li,
 a {
-    display: flex;
     justify-content: space-between;
     text-decoration: none;
     list-style: none;
+}
+
+.textWhite {
+    color: white;
+}
+
+.bgRed {
+    background-color: red;
+}
+
+.gap2 {
+    gap: 2rem;
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bgBlue {
+    background-color: blue;
 }
