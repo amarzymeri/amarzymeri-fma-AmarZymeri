@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* DISPLAY FLEX */
+.dFlex {
+    display: flex;
+}
+
+/* ASIDE */
+aside {
+    width: 20vw;
+    height: 100vh;
+    background-color: gray;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    font-size: 25px;
+}
+
+aside h1 {
+    flex-direction: column;
+    align-items: end;
+}
+
+
+aside p {
+    flex-direction: column;
+    align-items: end;
+}
+
+.asideButton {
+    background-color: transparent;
+}
+
+/* MAIN */
+main {
+    width: 80vw;
+    height: 100vh;
+    padding: 25px 30px;
+}
+
+.JustifyContentSpacBetween {
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 18px;
+}
+
+section p {
+    align-self: center;
+}
+
+.bgRed {
+    background-color: red;
+    border: 1px solid black;
+    padding: 1.5px;
+}
+
+.bgBlue {
+    background-color: blue;
+    border: 1px solid black;
+    padding: 1.5px;
+}
+
+div h1 {
+    margin-top: 18px;
+}
+
+.margin40 {
+    margin-top: 100px;
+}
