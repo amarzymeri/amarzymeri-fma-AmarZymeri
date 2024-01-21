@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+img {
+    width: 100px;
+    height: 140px;
+    transition-property: transform, filter;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    filter: blur(5px);
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+
+img:hover {
+    transform: rotate(360deg);
+    filter: none;
+}
