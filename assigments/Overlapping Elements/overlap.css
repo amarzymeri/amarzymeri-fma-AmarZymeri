@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 173vh;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 100px 1fr;
+    background-color: bisque;
+}
+
+header {
+    background-color: green;
+    width: 98.8vw;
+    height: 20vh;
+    border-radius: 0 0 50px 50px;
+}
+
+main {
+    background-color: white;
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    /* corner-shape: bevel; */
+    border-radius: 0 0 30px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+}
+
+main h1 {
+    margin: 50px 100px 50px 100px;
+    text-align: center;
+    align-items: center;
+}
+
+main p {
+    padding: 10px;
+}
