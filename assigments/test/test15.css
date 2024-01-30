@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    width: 200px;
+    background-color: red;
+    animation: Amar 3s ease-in-out forwards;
+}
+
+@keyframes Amar {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+label {
+    visibility: hidden;
+}
+
+.div1 {
+    position: absolute;
+}
+
+.div2 {
+    position: relative;
+}
