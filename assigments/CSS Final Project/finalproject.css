@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    grid-template-columns: 2fr 10fr;
+    background-color: lightgray;
+}
+
+.dGrid {
+    display: grid;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.JustifyContent {
+    justify-content: space-between;
+}
+
+/* ASIDE */
+aside {
+    background-color: grey;
+    padding: 0 15px 0;
+    background: url(./assets/images/sidebar-1.jpg);
+    background-color: rgba(19, 19, 19, 0.9);
+    background-blend-mode: color;
+}
+
+.FontSize {
+    font-size: 20px;
+}
+
+.padding5 {
+    padding: 10px;
+}
+
+.ListItems:hover:not(.bgRed) {
+    background-color: grey;
+}
+
+.bgRed {
+    background-color: red;
+}
+
+.TextWhite {
+    color: white;
+}
+
+.AsideLinks {
+    grid-template-columns: auto 1fr auto;
+}
+
+.margin15 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.AlignItemsCenter {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.gap7 {
+    gap: 14px;
+}
+
+.avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* HEADER */
+header {
+    align-items: center;
+    text-align: center;
+}
+
+article h4 {
+    text-align: center;
+    align-items: center;
+}
+
+.img {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.width {
+    width: 100%;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    transition: border-bottom 1s;
+    background-color: transparent;
+}
+
+input:focus {
+    border-bottom: 2px solid red;
+}
+
+
+.notifications {
+    position: relative;
+}
+
+.info {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.Amar {
+    visibility: hidden;
+    position: absolute;
+}
+
+.notifications:hover .Amar {
+    visibility: visible;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 10px;
+    background-color: white;
+    height: 190%;
+    padding: 10px;
+}
+
+.Amar p {
+    padding: 5px;
+}
+
+.Amar p:hover {
+    background-color: red;
+}
+
+/* MAIN */
+main {
+    background-color: blue;
+    margin: 30px;
+}
+
+.main-width {
+    width: 15px;
+}
+
+.div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+hr {
+    color: gray;
+    width: 25%;
+}
+
+.directionRow {
+    flex-direction: row;
+}
+
+/* FOOTER */
+footer {
+    background-color: green;
+}
