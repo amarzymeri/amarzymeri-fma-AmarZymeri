@@ -4,9 +4,33 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: auto 1fr;
     background-color: lightgray;
+    height: 100vh;
+}
+
+.dGrid {
+    display: grid;
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin-left: 10%;
+    }
+
+    aside {
+        display: none;
+        visibility: hidden;
+    }
+
+    .div-1 {
+        width: 70%;
+    }
+}
+
+.div-1 {
+    overflow-y: scroll;
+    margin: 20px 0px;
 }
 
 .dFlex {
@@ -24,6 +48,7 @@ aside {
     background: url(./assets/images/sidebar-1.jpg);
     background-color: rgba(19, 19, 19, 0.9);
     background-blend-mode: color;
+    overflow-y: scroll;
 }
 
 .FontSize {
@@ -65,6 +90,10 @@ aside {
     gap: 14px;
 }
 
+.gap50 {
+    gap: 25px;
+}
+
 .avatar {
     width: 40px;
     border-radius: 50%;
@@ -83,7 +112,6 @@ article h4 {
 }
 
 .img {
-    border: 1px solid black;
     border-radius: 50%;
     background-color: white;
 }
@@ -126,15 +154,17 @@ input:focus {
     position: absolute;
 }
 
+.Amar p {
+    margin: 5px 10px;
+}
+
 .notifications:hover .Amar {
     visibility: visible;
     position: absolute;
     top: 30px;
     right: 30px;
-    bottom: 10px;
     background-color: white;
-    height: 190%;
-    padding: 10px;
+    width: 200px;
 }
 
 .Amar p {
@@ -143,14 +173,52 @@ input:focus {
 
 .Amar p:hover {
     background-color: red;
+    color: white;
 }
 
 /* MAIN */
 main {
+    margin: 5px;
+}
+
+.img-2 {
+    transform: translateY(-30px);
+}
+
+.div-2:hover .img-2 {
+    transform: translateY(-45px);
+}
+
+.div-2 {
+    visibility: visible;
+    border-radius: 5px;
     background-color: white;
-    margin: 30px;
-    position: relative;
-    visibility: hidden;
+}
+
+.img-delay {
+    transition: img-1;
+}
+
+.transitiondelay {
+    transition-delay: .1s;
+}
+
+.transition {
+    transition: transform, ;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.transition:hover {
+    transform: translateY(-45px);
+}
+
+.margin-right {
+    margin-left: 50px;
+}
+
+.fig-width {
+    height: 160px;
 }
 
 .article-width {
@@ -159,7 +227,6 @@ main {
 
 .section-width {
     width: 55%;
-    position: relative;
 }
 
 .margin-bottom {
@@ -194,14 +261,17 @@ main {
     padding: 10px;
 }
 
+.card-1 {
+    width: 240px;
+    height: 180px;
+}
+
 .transformY {
     transform: translateY(-20px);
 }
 
 .border {
     background-color: green;
-    position: absolute;
-    top: -10px;
     padding: 10px;
 }
 
@@ -212,8 +282,20 @@ main {
     background-color: white;
 }
 
+.card-2 {
+    width: 350px;
+}
+
 .main-width {
     width: 15px;
+}
+
+.no-color {
+    background-color: transparent;
+}
+
+.margin-top {
+    margin-top: 15px;
 }
 
 .main-h3 {
@@ -230,7 +312,7 @@ hr {
 }
 
 .hr-width {
-    width: 17%;
+    width: 100%;
 }
 
 .directionRow {
@@ -239,5 +321,7 @@ hr {
 
 /* FOOTER */
 footer {
-    background-color: green;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
