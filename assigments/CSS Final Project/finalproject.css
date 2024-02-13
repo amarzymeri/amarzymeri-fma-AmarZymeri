@@ -24,6 +24,10 @@ body {
     display: flex;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 .JustifyContent {
     justify-content: space-between;
 }
