@@ -7,30 +7,17 @@ body {
     grid-template-columns: auto 1fr;
     background-color: lightgray;
     height: 100vh;
+    overflow: hidden;
 }
 
 .dGrid {
     display: grid;
 }
 
-@media (max-width: 1000px) {
-    body {
-        margin-left: 10%;
-    }
-
-    aside {
-        display: none;
-        visibility: hidden;
-    }
-
-    .div-1 {
-        width: 70%;
-    }
-}
-
 .div-1 {
+    display: grid;
+    margin: 0px 20px;
     overflow-y: scroll;
-    margin: 20px 0px;
 }
 
 .dFlex {
@@ -181,8 +168,17 @@ main {
     margin: 5px;
 }
 
+.gridtemplatescolumn {
+    grid-template-columns: 1fr 1fr;
+}
+
 .img-2 {
     transform: translateY(-30px);
+    width: 100%;
+}
+
+.img-2:hover .margin-top {
+    margin-top: 100px;
 }
 
 .div-2:hover .img-2 {
@@ -190,13 +186,13 @@ main {
 }
 
 .div-2 {
-    visibility: visible;
+    visibility: hidden;
     border-radius: 5px;
     background-color: white;
 }
 
-.img-delay {
-    transition: img-1;
+.div-2:hover {
+    visibility: visible;
 }
 
 .transitiondelay {
@@ -223,10 +219,6 @@ main {
 
 .article-width {
     margin: 10px;
-}
-
-.section-width {
-    width: 55%;
 }
 
 .margin-bottom {
@@ -262,12 +254,12 @@ main {
 }
 
 .card-1 {
-    width: 240px;
+    width: 100%;
     height: 180px;
 }
 
 .transformY {
-    transform: translateY(-20px);
+    transform: translateY(-25px);
 }
 
 .border {
@@ -284,6 +276,7 @@ main {
 
 .card-2 {
     width: 350px;
+    margin: 20px 0;
 }
 
 .main-width {
@@ -292,6 +285,14 @@ main {
 
 .no-color {
     background-color: transparent;
+}
+
+.visibility {
+    visibility: visible;
+}
+
+.Tablet {
+    grid-template-columns: auto 1fr;
 }
 
 .margin-top {
@@ -315,8 +316,16 @@ hr {
     width: 100%;
 }
 
-.directionRow {
-    flex-direction: row;
+.grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.marginright {
+    margin-right: 60px;
+}
+
+.visibilityhidden {
+    visibility: hidden;
 }
 
 /* FOOTER */
@@ -324,4 +333,45 @@ footer {
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+@media (max-width: 950px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+        visibility: hidden;
+    }
+
+    .visibilityhidden {
+        visibility: visible;
+    }
+
+    .Tablet {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .visibility {
+        visibility: hidden;
+        position: absolute;
+        display: none;
+    }
+
+    .div-1 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gridtemplatescolumn {
+        grid-template-columns: 1fr;
+    }
 }
