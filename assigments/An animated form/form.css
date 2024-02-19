@@ -4,11 +4,89 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
+}
+
+.dFlex {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: grey;
+}
+
+p {
+    display: none;
+}
+
+input {
+    width: 90%;
+}
+
+input:focus+p {
+    display: inline-block;
+}
+
+button {
+    width: 40%;
+    background-color: blue;
+}
+
+.margin {
+    margin: 5px 10px;
+}
+
+.gap {
+    gap: 90px;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    animation: rotating 1s linear infinite;
+}
+
+@keyframes animation {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes animation {
+    from {
+        transform: translateY(0px)
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+.animation {
+    animation: animation 1s;
+    animation-fill-mode: both;
+}
+
+img {
+    width: 30px;
 }
