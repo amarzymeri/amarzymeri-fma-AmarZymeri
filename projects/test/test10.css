@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.dFlex {
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+.kitten {
+    border-radius: 50%;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.gap4 {
+    gap: 7px;
+}
+
+.border3 {
+    border: 3px solid blue;
+    border-radius: 15px;
+}
+
+.white {
+    color: white
+}
+
+.bgBlue {
+    background-color: blue;
+}
