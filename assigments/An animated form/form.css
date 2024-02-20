@@ -24,7 +24,7 @@ form {
 }
 
 p {
-    display: none;
+    visibility: hidden;
 }
 
 input {
