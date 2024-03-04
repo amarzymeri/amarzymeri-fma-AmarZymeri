@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+<body>
+
+
+    <script>
+        let firstnumber = parseFloat(prompt('Write the first number'))
+        let operator = prompt('What operator would you like to use?');
+        let secondNumber = parseFloat(prompt('Write the second number'))
+
+
+
+        if (isNaN(firstnumber) || isNaN(secondNumber)) {
+            throw new Error('Write an invalid number')
+        }
+
+        else {
+            if (operator === 'plus') {
+                result = firstnumber + secondNumber;
+            }
+            else if (operator === 'minus') {
+                result = firstnumber - secondNumber;
+            }
+            else if (operator === 'here') {
+                result = firstnumber * secondNumber;
+            }
+            else if (operator === 'pjestim') {
+                result = firstnumber / secondNumber;
+            }
+            else {
+                throw new Error('Unknown Operator');
+            }
+
+            alert(`${firstnumber} ${operator} ${secondNumber} = ${result}`)
+        }
+
+
+    </script>
+</body>
+
+</html>

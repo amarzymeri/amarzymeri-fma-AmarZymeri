@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>air conditioner</title>
+
+    <style>
+        div {
+            height: 100vh;
+            background-image: url(./ac.png);
+            background-repeat: no-repeat;
+            background-size: 400px 100px;
+            width: 400px;
+            height: 100px;
+            margin: 50px auto;
+        }
+
+        h4 {
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 50px;
+        }
+
+        select {
+            width: 100px;
+            height: 40px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4>0</h4>
+
+        <select name="" class="tempSelect">
+        </select>
+    </div>
+
+
+    <script>
+        let allOptions;
+        let tempSelect = document.querySelector(".tempSelect");
+
+        for (let i = 1; i <= 30; i++) {
+            allOptions += '<option value="">' + i + '</option>'
+        }
+
+
+        tempSelect.innerHTML = allOptions;
+    </script>
+
+</body>
+
+</html>
