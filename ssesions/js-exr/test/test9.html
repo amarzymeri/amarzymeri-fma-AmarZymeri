@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let correctNumber = parseInt(prompt('Shkruani nje numer'))
+
+        while (correctNumber !== 1) {
+            console.log(correctNumber);
+
+            if (correctNumber % 2 === 0) {
+                correctNumber /= 0;
+            }
+            else {
+                correctNumber = correctNumber * 3 + 1;
+            }
+        }
+    </script>
+</body>
+
+</html>
