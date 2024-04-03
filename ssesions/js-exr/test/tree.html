@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show Me</title>
+
+    <style>
+        body {
+            margin-left: 30%;
+        }
+
+        .card {
+            width: 400px;
+            border: 2px solid gray;
+            margin: 20px;
+        }
+
+        .shadow {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .hideCard {
+            visibility: hidden;
+        }
+
+        .showCard {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Welcome my card</h1>
+        <img width="300" src="https://static.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="kitty">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam inventore eveniet itaque accusamus rem a
+            pariatur, magni non consectetur debitis numquam repellendus ratione dicta facere, suscipit fugiat! Minus,
+            dicta fugiat!</p>
+    </div>
+    <br>
+    <input type="checkbox" name="addShadow" id="addShadow" value="1" onclick="addRemoveShadow()">
+    <label for="addShadow">Add Shadow</label>
+    <br><br>
+    <a href="javascript: hideMe()">Hide me</a>
+
+    <script>
+
+        const card = document.querySelector('.card');
+        const addShadow = document.querySelector('#addShadow')
+        const showme = document.querySelector('a');
+
+
+        let state = true;
+        function hideMe() {
+            card.classList.add('hideCard');
+            showme.innerHTML = 'showme';
+            if (state) {
+                card.classList.add('hideCard');
+                showme.innerHTML = 'Show me';
+                state = false;
+            }
+            else {
+                card.classList.remove('hideCard');
+                showme.innerHTML = 'Hide me';
+                state = true;
+            }
+        }
+
+        function addRemoveShadow() {
+            if (!addShadow.checked) {
+                card.classList.remove('shadow');
+            }
+            else {
+                card.classList.add('shadow');
+            }
+        }
+    </script>
+</body>
+
+</html>

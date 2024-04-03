@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+</head>
+
+<body>
+    <h3 class="setTemp">Temp: 0</h3>
+    <select name="" id="" class="tempList" onchange="chamgeTemp(this)">
+        <option value="1">1</option>
+    </select>
+
+    <script>
+        const tempList = document.querySelector('.tempList');
+        const setTemp = document.querySelector('.setTemp');
+        let buildOptions = '';
+
+        for (let run = 0; run <= 30; run++) {
+            buildOptions += '<option value="' + run + '">' + run + '</option>';
+        }
+
+        tempList.innerHTML = buildOptions;
+
+        // function chamgeTemp(opt) {
+        //     setTemp.innerHTML = "Temp: " + opt.value
+        //     console.log(opt.value);
+        // }
+
+        tempList.addEventListener("change", (event) => {
+            setTemp.innerHTML = "Temp: " + event.target.value;
+        });
+
+
+    </script>
+</body>
+
+</html>
