@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 900px;
+    margin: 0 200px;
+}
+
+.div-contanier {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 3%;
+}
+
+.div-direction {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    list-style: none;
+
+}

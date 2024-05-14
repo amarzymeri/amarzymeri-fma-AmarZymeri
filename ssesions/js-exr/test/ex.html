@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let getResult = sum(4, 5);
+
+        console.log("The sum is: " + getResult);
+
+        function sum(a, b) {
+            let theSum = a + b;
+            return theSum;
+        }
+
+        function difference(a, b) {
+            let theDifference = a - b;
+            return theDifference;
+        }
+
+        let circle = {
+            radius: 4,
+            getArea: function (r) { return 3.14 * r * r; },
+            getPerimeter: function (r) { 2 * 3.14 * r; }
+        };
+
+        console.log("Radius: " + circle.radius);
+        console.log("Area: " + Math.floor(circle.getArea(circle.radius)));
+        console.log("Perimeter: " + Math.floor(circle.getPerimeter(circle.radius)));
+
+    </script>
+</body>
+
+</html>
