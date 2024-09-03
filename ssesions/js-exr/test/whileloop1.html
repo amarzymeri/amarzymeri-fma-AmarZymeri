@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while Loop</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="Temp">0</h1>
+    </div>
+
+    <select name="" id="tempSelect">
+    </select>
+
+
+    <script>
+        let allOptions;
+        const Temp = document.querySelector("#Temp");
+        const tempSelect = document.querySelector("#tempSelect");
+        let i = 40;
+
+        while (i >= 0) {
+            allOptions += `<option value="${i}">${i}</option>`;
+            i--;
+        }
+
+        tempSelect.innerHTML = allOptions;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+
+    <script>
+        const urls = ["#dimri", "#pranvera", "#vera", "#vjeshta"];
+
+        for (let i = 0; i < 4; i++) {
+            let link = document.createElement("a");
+            link.href = urls[(i + 1) % 4];
+            link.textContent = "Link " + (i + 1);
+            document.body.appendChild(link);
+            document.body.appendChild(document.createElement("br"));
+        }
+    </script>
+</body>
+
+</html>

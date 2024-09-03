@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Quiz 1</h1>
+
+    <ol id="questionList">
+
+    </ol>
+    <script src="./questions.js"></script>
+    <script>
+        const questionList = document.querySelector("#questionList");
+        let questionsHTML = '';
+        console.log();
+
+        for (let i = 0; i < questionsHTML.length; i++) {
+            questionsHTML += `
+            <li>${allQuestions[i].questions}
+                <ol>
+                    <li><a href = "#"${allQuestions[i].options[0]}></li>
+                    <li><a href = "#"${allQuestions[i].options[1]}></li>
+                    <li><a href = "#"${allQuestions[i].options[2]}></li>
+                    <li><a href = "#"${allQuestions[i].options[3]}></li>
+                </ol>
+            </li>
+            `;
+        }
+
+        questionList.innerHTML = questionsHTML;
+    </script>
+</body>
+
+</html>

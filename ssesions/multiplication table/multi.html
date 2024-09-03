@@ -10,22 +10,14 @@
 <body>
 
 
-
-
-
     <script>
-        console.log('Hello');
-        alert('Hello')
-        alert('Hello')
-        alert('Hello')
-        alert('Hello')
-        alert('Hello')
-        alert('Hello')
-        alert('Hello')
-        alert('Hello')
+        const number = parseInt(prompt('Enter an integer: '));
 
+        for (let i = 1; i <= 10; i++) {
+            const result = i * number;
+            alert(`${number} * ${i} = ${result}`);
+        }
     </script>
-
 </body>
 
 </html>

@@ -17,7 +17,7 @@ document.body.appendChild(startOver);
 
 let points = 0;
 let ticker = 10;
-let winPt = 2;
+let winPt = 1;
 let gameOver = false;
 
 let bgrReady = false;
@@ -78,21 +78,13 @@ let render = function () {
     if (macaReady) { ctx.drawImage(macaImg, maca.x, maca.y); }
     if (miuReady) { ctx.drawImage(miuImg, miu.x, miu.y); }
 
-    if (maca.x > rrafshi.width - maca.width / 2) {
-        maca.x = -maca.width / 2;
-    }
+    if (maca.x > rrafshi.width - maca.width / 2) { maca.x = -maca.width / 2; }
 
-    if (maca.x < 0 - maca.width / 2) {
-        maca.x = rrafshi.width - maca.width / 2;
-    }
+    if (maca.x < 0 - maca.width / 2) { maca.x = rrafshi.width - maca.width / 2; }
 
-    if (maca.y > rrafshi.height - maca.height / 2) {
-        maca.y = -maca.height / 2;
-    }
+    if (maca.y > rrafshi.height - maca.height / 2) { maca.y = -maca.height / 2; }
 
-    if (maca.y < 0 - maca.height / 2) {
-        maca.y = rrafshi.height - maca.height / 2;
-    }
+    if (maca.y < 0 - maca.height / 2) { maca.y = rrafshi.height - maca.height / 2; }
 
     if (
         maca.x < miu.x + miu.width

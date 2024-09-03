@@ -7,17 +7,17 @@
     <title>air conditioner</title>
 
     <style>
-        div {
+        .bgr {
             height: 100vh;
             background-image: url(./ac.png);
             background-repeat: no-repeat;
             background-size: 400px 100px;
             width: 400px;
             height: 100px;
-            margin: 50px auto;
+            margin: 10;
         }
 
-        h4 {
+        .bgr h4 {
             text-align: center;
             padding: 30px;
             margin-bottom: 50px;
@@ -26,31 +26,38 @@
         select {
             width: 100px;
             height: 40px;
-            margin: 0 auto;
+            margin: 10 auto;
             text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h4>0</h4>
-
-        <select name="" class="tempSelect">
-        </select>
+    <div class="bgr">
+        <h4 id="temp">0</h4>
     </div>
-
+    <select name="" id="tempSelect">
+    </select>
 
     <script>
         let allOptions;
-        let tempSelect = document.querySelector(".tempSelect");
+        const tempSelect = document.querySelector("#tempSelect");
+        const temp = document.querySelector("#temp");
 
-        for (let i = 1; i <= 30; i++) {
-            allOptions += '<option value="">' + i + '</option>'
+        for (let i = 0; i <= 30; i++) {
+            if (i == 0) {
+                allOptions += `<option value="off">off</option>`;
+            }
+            else {
+                allOptions += `<option value="${i}">${i}</option>`;
+            }
         }
 
 
         tempSelect.innerHTML = allOptions;
+        tempSelect.addEventListener("change", function (e) {
+            temp.textContent = e.target.value;
+        });
     </script>
 
 </body>
