@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Center</title>
+</head>
+
+<body>
+    <form action="" class="GameForm">
+        <input type="text" placeholder="Game Title" id="gTitle"><br>
+        <input type="text" placeholder="Description" id="gDesc"><br>
+        <input type="number" placeholder="0" id="gViews"><br>
+        <input type="number" placeholder="0" id="gLikes"><br><br>
+
+        <button id="AddGame">Add Game</button>
+    </form>
+    <ul class="ListGame">
+
+    </ul>
+    <script src="data.js"></script>
+    <script src="script-2.js">
+        AddGame.addEventListener("click", function () {
+            let newGame = {
+                name: gTitle.value,
+                desc: gDesc.value,
+                views: gViews.value,
+                likes: gLikes.value
+            }
+
+            allGames.push(newGame);
+        });
+    </script>
+</body>
+
+</html>

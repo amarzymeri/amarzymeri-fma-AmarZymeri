@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="addBTN">Add</button>
+
+    <h1 id="value">0</h1>
+
+    <script>
+        const addBTN = document.querySelector("#addBTN");
+        const value = document.querySelector("#value");
+        let Value = 0;
+
+        addBTN.addEventListener("click", () => {
+            value.innerHTML = Value;
+            Value++;
+        })
+    </script>
+</body>
+
+</html>
