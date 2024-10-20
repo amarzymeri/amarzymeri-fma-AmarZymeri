@@ -4,43 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faqja e shkolles</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./shkolla.css">
+    <title>Abaz Ajeti School</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- Link to the JavaScript file -->
 </head>
 
 <body>
-    <header class="dFlex JustifyContentSpacebetween">
-        <figure>
-            <img src="https://mediafokus.info/wp-content/uploads/2019/12/abazajeti-794x445.jpg"
-                alt="shkolla Abaz-Ajeti">
-        </figure>
+    <div class="header-section">
+        <h1>Abaz Ajeti School</h1>
+    </div>
 
-        <ul class="dFlex">
-            <li><a class="textBlack" href="./shkolla.html">Ballina</a></li>
-            <li><a class="textBlack" href="#">Historiku i shkolles</a></li>
-            <li><a class="textBlack" href="#">Lendet</a></li>
-            <li><a class="textBlack" href="#"></a></li>
-            <li><a class="textBlack" href="#"></a></li>
-        </ul>
-    </header>
-
-    <aside>
-        <ul>
-            <li><a href="./drejtori.html">Drejtori</a></li>
-            <li><a href="">Mesimdhenesit</a></li>
-            <li><a href="">Nxenesit</a></li>
-            <li><a href="">Settings</a></li>
-        </ul>
-    </aside>
-
-    <main>
-
-    </main>
+    <div class="content-wrapper">
+        <div class="subject-box">
+            <div class="subject" onclick="showInfo(this, 'Matematikë', 'Makfire')">Matematikë</div>
+            <div class="subject" onclick="showInfo(this, 'Shkencë', 'Jane Smith')">Fizikë</div>
+            <div class="subject" onclick="showInfo(this, 'Histori', 'Arsim')">Histori</div>
+            <div class="subject" onclick="showInfo(this, 'Anglisht', 'Shukrije')">Anglisht</div>
+            <div class="subject" onclick="showInfo(this, 'Art', 'Ragip')">Art</div>
+            <div class="subject" onclick="showInfo(this, 'Edukim Fizik', 'Burbuqe')">Edukim Fizik</div>
+        </div>
+    </div>
 
     <footer>
-
+        <p>All rights reserved to Amar Zymeri &copy; 2024</p>
     </footer>
 </body>
 

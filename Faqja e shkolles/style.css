@@ -1,0 +1,84 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.header-section {
+    background-color: darkblue;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-section h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.content-wrapper {
+    background-color: white;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.subject-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.subject {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subject.active {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.subject {
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
