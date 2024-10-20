@@ -3,7 +3,7 @@ function showInfo(obj, subject, teacher) {
         obj.innerHTML = subject;
         obj.classList.remove('active');
     } else {
-        obj.innerHTML = `Name: ${teacher}<br>Subject: ${subject}`;
+        obj.innerHTML = `Name: ${teacher}<br>Lënda: ${subject}`;
         obj.classList.add('active');
     }
 }
