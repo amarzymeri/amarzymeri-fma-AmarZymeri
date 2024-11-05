@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura</title>
+</head>
+
+<body>
+    <h1 id="num">1</h1>
+    <button id="btnAdd">Add</button>
+    <button id="btnSubtract">Subtract</button>
+
+    <script>
+        const btnAdd = document.querySelector("#btnAdd");
+        const btnSubtract = document.querySelector("#btnSubtract");
+        const num = document.querySelector("#num");
+        let value = 1;
+
+        btnAdd.addEventListener("click", addFun);
+        btnSubtract.addEventListener("click", subtract);
+
+        function addFun() {
+            value++;
+            num.innerHTML = value;
+        }
+
+        function subtract() {
+            if (value != 0) { value--; }
+            num.innerHTML = value;
+        }
+    </script>
+</body>
+
+</html>

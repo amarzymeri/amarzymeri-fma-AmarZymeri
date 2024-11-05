@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    margin: 100px auto;
+    width: fit-content;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+}
+
+.wrapper h1 {
+    text-transform: uppercase;
+}
+
+.wrapper input {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-bottom: 15px;
+}
+
+.wrapper button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    width: 100%;
+}
